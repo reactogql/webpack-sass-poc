@@ -1,0 +1,8 @@
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href=`<%=htmlWebpackPlugin.files.chunks.main.css %>`)
+  body
+    block content
+    script(src=`<%=htmlWebpackPlugin.files.chunks.main.entry %>`) 
